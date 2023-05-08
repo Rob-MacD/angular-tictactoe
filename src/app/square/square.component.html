@@ -1,1 +1,11 @@
-<p>square works!</p>
+<button outline nbButton *ngIf="!value" status="primary">
+  {{ value }}
+</button>
+
+<button outline nbButton *ngIf="value == 'X'" hero status="success">
+  {{ value }}
+</button>
+
+<button outline nbButton *ngIf="value == 'O'" hero status="info">
+  {{ value }}
+</button>
